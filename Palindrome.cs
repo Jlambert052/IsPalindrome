@@ -12,5 +12,15 @@ namespace Leetcode {
                 return false;
 
         }
+
+        public bool IsPalindrome(string s) {
+            IEnumerable<char> query =
+                from c in s
+                where Char.IsLetterOrDigit(c)
+                select Char.ToLower(c);
+            var arr = query.ToArray();
+            Array.Reverse(arr);
+            return new string(query.ToArray()) == new string(arr);
+        }
     }
 }

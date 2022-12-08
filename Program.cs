@@ -2,5 +2,6 @@
 Console.WriteLine("Hello, Palindrome!");
 
 Leetcode.Palindrome pal = new();
-string palindrome = "abcba";
-pal.IsPalindromePureString(palindrome);
+string palindrome = "race!car";
+System.Console.WriteLine(pal.IsPalindrome(palindrome));
+
